@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+    <h3>Write your Blog</h3>
+    <form action="/submit" method="post">
+        <label for="title">Title</label><br>
+        <input type="text" name="title" class="textb" required><br>
+        <label for="title">Write Your Content Here.</label><br>
+        <textarea name="content" class="textareab" required></textarea><br>
+        <input type="submit" value="Submit" class="btn">
+    </form>
+</div>

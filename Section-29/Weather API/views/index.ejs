@@ -1,0 +1,15 @@
+<h1>Hello Weolcome to our Site</h1>
+
+<div class="container">
+    <h3>Enter the details</h3>
+    <form action="/submit" method="post">
+        <label for="lat">Latitude</label><br>
+        <input type="text" name="lat" class="textb" required><br><br>
+        <label for="title">Longtitude</label><br>
+        <input type="text" name="lon" class="textb" required><br><br>
+        <input type="submit" value="Submit" class="btn">
+    </form>
+    <% if(content){ %>
+    <h3>Your weather for today will be <em><%= content.description %></em></h3>
+    <% } %>
+</div>

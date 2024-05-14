@@ -1,0 +1,9 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+    <h3>Articles to Read</h3>
+<ol class="list-unstyled mb-0">
+    <% a_titles.forEach(title => { %>
+        <li><a href=""><%= title %></a></li>
+      <% });  %>
+</div>
